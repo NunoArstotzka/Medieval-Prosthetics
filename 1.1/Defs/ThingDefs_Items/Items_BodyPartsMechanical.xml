@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <ThingDef Name="MechanicalMed" ParentName="BodyPartBase" Abstract="True">
+      <tradeTags>
+         <li>Mechanical</li>
+      </tradeTags>
+      <thingCategories>
+         <li>BodyPartsSimple</li>
+      </thingCategories>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/MechanicalProsthesis</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+         <drawSize>0.80</drawSize>
+         <shaderType>CutoutComplex</shaderType>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>2</DeteriorationRate>
+         <WorkToMake>180000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <researchPrerequisite>MechanicalLimbs</researchPrerequisite>
+         <recipeUsers>
+            <li>FueledSmithy</li>
+         </recipeUsers>
+      </recipeMaker>
+   </ThingDef>
+   
+
+   <!-- Added body parts -->
+
+   <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedHand</defName>
+      <label>mechanical hand</label>
+      <description>A mechanical hand.</description>
+      <costList>
+         <Steel>70</Steel>
+		 <ComponentIndustrial>3</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>4</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedArm</defName>
+      <label>mechanical arm</label>
+      <description>A mechanical arm.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <ComponentIndustrial>6</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>8</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedLeg</defName>
+      <label>mechanical leg</label>
+      <description>A mechanical leg.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <ComponentIndustrial>6</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>10</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedFoot</defName>
+      <label>mechanical foot</label>
+      <description>A mechanical foot.</description>
+      <costList>
+         <Steel>70</Steel>
+		 <ComponentIndustrial>3</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>4</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedToe</defName>
+      <label>mechanical toe</label>
+      <description>A mechanical toe.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedFinger</defName>
+      <label>mechanical finger</label>
+      <description>A mechanical finger.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedNose</defName>
+      <label>intricate nose</label>
+      <description>An intricate nose.</description>
+      <costList>
+         <Steel>10</Steel>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.4</Mass>
+      </statBases>
+   </ThingDef>  
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedEye</defName>
+      <label>intricate eye</label>
+      <description>An intricate eye.</description>
+      <costList>
+         <Steel>10</Steel>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.4</Mass>
+      </statBases>
+   </ThingDef>   
+   
+    <ThingDef ParentName="MechanicalMed">
+      <defName>MechanicalMedEar</defName>
+      <label>intricate ear</label>
+      <description>An intricate ear.</description>
+      <costList>
+         <Steel>10</Steel>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.4</Mass>
+      </statBases>
+   </ThingDef>      
+   
+   </Defs>

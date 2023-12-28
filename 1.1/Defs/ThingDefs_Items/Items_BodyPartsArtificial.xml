@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <ThingDef Name="ArtificialMed" ParentName="BodyPartBase" Abstract="True">
+      <tradeTags>
+         <li>Prostheses</li>
+      </tradeTags>
+      <thingCategories>
+         <li>BodyPartsSimple</li>
+      </thingCategories>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+         <drawSize>0.80</drawSize>
+         <shaderType>CutoutComplex</shaderType>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>2</DeteriorationRate>
+         <WorkToMake>60000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <researchPrerequisite>ArtificialLimbs</researchPrerequisite>
+         <recipeUsers>
+            <li>CraftingSpot</li>
+         </recipeUsers>
+      </recipeMaker>
+   </ThingDef>
+   
+
+   <!-- Added body parts -->
+
+   <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedHand</defName>
+      <label>artificial hand</label>
+      <description>An artificial hand.</description>
+      <costList>
+         <Steel>55</Steel>
+		 <WoodLog>10</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedArm</defName>
+      <label>artificial arm</label>
+      <description>An artificial arm.</description>
+      <costList>
+         <Steel>100</Steel>
+		 <WoodLog>25</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>6</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedLeg</defName>
+      <label>artificial leg</label>
+      <description>An artificial leg.</description>
+      <costList>
+         <Steel>100</Steel>
+		 <WoodLog>25</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>8</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedFoot</defName>
+      <label>artificial foot</label>
+      <description>An artificial foot.</description>
+      <costList>
+         <Steel>55</Steel>
+		 <WoodLog>10</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedToe</defName>
+      <label>artificial toe</label>
+      <description>An artificial toe.</description>
+      <costList>
+         <Steel>15</Steel>
+		 <WoodLog>5</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedFinger</defName>
+      <label>artificial finger</label>
+      <description>An artificial finger.</description>
+      <costList>
+         <Steel>15</Steel>
+		 <WoodLog>5</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedNose</defName>
+      <label>artificial nose</label>
+      <description>An artificial nose.</description>
+      <costList>
+		 <WoodLog>15</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedEye</defName>
+      <label>artificial eye</label>
+      <description>An artificial eye.</description>
+      <costList>
+		 <WoodLog>15</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="ArtificialMed">
+      <defName>ArtificialMedEar</defName>
+      <label>artificial ear</label>
+      <description>An artificial ear.</description>
+      <costList>
+		 <WoodLog>15</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef> 
+   
+   </Defs>

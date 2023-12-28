@@ -1,0 +1,2 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Prosthetics\Source\ProstheticsModSettings\obj\Debug\ProstheticsModSettings.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Prosthetics\Source\ProstheticsModSettings\obj\Debug\ProstheticsModSettings.csproj.CoreCompileInputs.cache

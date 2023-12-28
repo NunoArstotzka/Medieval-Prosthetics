@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="addedPartMedMechanical" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(78,196,242)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedHand</defName>
+      <label>mechanical hand</label>
+	  <labelNoun>a mechanical hand</labelNoun>
+	  <description>An installed mechanical hand.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedHand</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedHand</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>mechanical hand</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedArm</defName>
+      <label>mechanical arm</label>
+	  <labelNoun>a mechanical arm</labelNoun>
+	  <description>An installed mechanical arm.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedArm</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>mechanical arm</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedLeg</defName>
+      <label>mechanical leg</label>
+	  <labelNoun>a mechanical leg</labelNoun>
+	  <description>An installed mechanical leg.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedLeg</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedFoot</defName>
+      <label>mechanical foot</label>
+	  <labelNoun>a mechanical foot</labelNoun>
+	  <description>An installed mechanical foot.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedFoot</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedFoot</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+   
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedToe</defName>
+      <label>mechanical toe</label>
+	  <labelNoun>a mechanical toe</labelNoun>
+	  <description>An installed mechanical toe.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedToe</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedToe</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedFinger</defName>
+      <label>mechanical finger</label>
+	  <labelNoun>a mechanical finger</labelNoun>
+	  <description>An installed mechanical finger.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedFinger</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedFinger</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedNose</defName>
+      <label>mechanical nose</label>
+	  <labelNoun>a mechanical nose</labelNoun>
+	  <description>An installed mechanical nose.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedNose</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedNose</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.05</NegotiationAbility>
+               <SocialImpact>+0.10</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>	  
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedEye</defName>
+      <label>mechanical eye</label>
+	  <labelNoun>a mechanical eye</labelNoun>
+	  <description>An installed mechanical eye.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedEye</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedEye</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.05</NegotiationAbility>
+               <SocialImpact>+0.10</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>	  
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedMechanical">
+      <defName>MechanicalMedEar</defName>
+      <label>mechanical ear</label>
+	  <labelNoun>a mechanical ear</labelNoun>
+	  <description>An installed mechanical ear.</description>
+      <descriptionHyperlinks><ThingDef>MechanicalMedEar</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>MechanicalMedEar</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.05</NegotiationAbility>
+               <SocialImpact>+0.10</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>	  
+   </HediffDef>
+   
+</Defs>

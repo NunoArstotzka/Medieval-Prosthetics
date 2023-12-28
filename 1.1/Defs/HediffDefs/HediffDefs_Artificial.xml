@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="addedPartMedArtificial" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(12,82,13)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedHand</defName>
+      <label>artificial hand</label>
+	  <labelNoun>an artificial hand</labelNoun>
+	  <description>An installed artificial hand.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedHand</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedHand</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>artificial hand</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedArm</defName>
+      <label>artificial arm</label>
+	  <labelNoun>an artificial arm</labelNoun>
+	  <description>An installed artificial arm.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedArm</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>artificial arm</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedLeg</defName>
+      <label>artificial leg</label>
+	  <labelNoun>an artificial leg</labelNoun>
+	  <description>An installed artificial leg.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedLeg</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedFoot</defName>
+      <label>artificial foot</label>
+	  <labelNoun>a artificial foot</labelNoun>
+	  <description>An installed artificial foot.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedFoot</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedFoot</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+   
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedToe</defName>
+      <label>artificial toe</label>
+	  <labelNoun>an artificial toe</labelNoun>
+	  <description>An installed artificial toe.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedToe</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedToe</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedFinger</defName>
+      <label>artificial finger</label>
+	  <labelNoun>an artificial finger</labelNoun>
+	  <description>An installed artificial finger.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedFinger</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedFinger</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0.75</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedNose</defName>
+      <label>artificial nose</label>
+	  <labelNoun>an artificial nose</labelNoun>
+	  <description>An installed artificial nose.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedNose</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedNose</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+	  <stages>
+		<li>
+         <statOffsets>
+               <SocialImpact>+0.05</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedEye</defName>
+      <label>artificial eye</label>
+	  <labelNoun>an artificial eye</labelNoun>
+	  <description>An installed artificial eye.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedEye</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedEye</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+	  <stages>
+		<li>
+         <statOffsets>
+               <SocialImpact>+0.05</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>   
+   
+    <HediffDef ParentName="addedPartMedArtificial">
+      <defName>ArtificialMedEar</defName>
+      <label>artificial ear</label>
+	  <labelNoun>an artificial ear</labelNoun>
+	  <description>An installed artificial ear.</description>
+      <descriptionHyperlinks><ThingDef>ArtificialMedEar</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>ArtificialMedEar</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+	  <stages>
+		<li>
+         <statOffsets>
+               <SocialImpact>+0.05</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>     
+   
+</Defs>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="addedPartMedAmbroisen" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(212,78,242)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedHand</defName>
+      <label>Ambroisen hand</label>
+	  <labelNoun>an Ambroisen hand</labelNoun>
+	  <description>An installed Ambroisen hand.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedHand</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedHand</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>Ambroisen hand</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedArm</defName>
+      <label>Ambroisen arm</label>
+	  <labelNoun>an Ambroisen arm</labelNoun>
+	  <description>An installed Ambroisen arm.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedArm</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>Ambroisen arm</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>10</power>
+                  <cooldownTime>1.8</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedLeg</defName>
+      <label>Ambroisen leg</label>
+	  <labelNoun>an Ambroisen leg</labelNoun>
+	  <description>An installed Ambroisen leg.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedLeg</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedFoot</defName>
+      <label>Ambroisen foot</label>
+	  <labelNoun>an Ambroisen foot</labelNoun>
+	  <description>An installed Ambroisen foot.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedFoot</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedFoot</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+	</HediffDef>
+   
+   
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedToe</defName>
+      <label>Ambroisen toe</label>
+	  <labelNoun>an Ambroisen toe</labelNoun>
+	  <description>An installed Ambroisen toe.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedToe</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedToe</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedFinger</defName>
+      <label>Ambroisen finger</label>
+	  <labelNoun>an Ambroisen finger</labelNoun>
+	  <description>An installed Ambroisen finger.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedFinger</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedFinger</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedNose</defName>
+      <label>Ambroisen nose</label>
+	  <labelNoun>an Ambroisen nose</labelNoun>
+	  <description>An installed Ambroisen nose.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedNose</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedNose</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.10</NegotiationAbility>
+               <SocialImpact>+0.15</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>
+
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedEye</defName>
+      <label>Ambroisen eye</label>
+	  <labelNoun>an Ambroisen eye</labelNoun>
+	  <description>An installed Ambroisen eye.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedEye</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedEye</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.10</NegotiationAbility>
+               <SocialImpact>+0.15</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>  
+
+    <HediffDef ParentName="addedPartMedAmbroisen">
+      <defName>AmbroisenMedEar</defName>
+      <label>Ambroisen ear</label>
+	  <labelNoun>an Ambroisen ear</labelNoun>
+	  <description>An installed Ambroisen ear.</description>
+      <descriptionHyperlinks><ThingDef>AmbroisenMedEar</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>AmbroisenMedEar</spawnThingOnRemoved>
+      <addedPartProps>
+         <solid>true</solid>
+         <partEfficiency>0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <statOffsets>
+               <NegotiationAbility>+0.10</NegotiationAbility>
+               <SocialImpact>+0.15</SocialImpact>
+         </statOffsets>
+		</li>	 
+      </stages>
+   </HediffDef>     
+   
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>CrudeLimbs</defName>
+		<label>Crude Limbs</label>
+		<description>Basic, uncomfortable, and ineffective, but better than nothing. Can now craft shoddy limb replacements at a Crafting Spot.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedPros</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>ArtificialLimbs</defName>
+		<label>Artificial Limbs</label>
+		<description>Still quite unrefined, but better than the shoddy limbs that came before. Artificial limbs can now be crafted at a Crafting Spot.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>CrudeLimbs</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedPros</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MechanicalLimbs</defName>
+		<label>Mechanical Limbs</label>
+		<description>Intricately crafted limbs with many pulleys and gears. While these are a great improvement, the mechanics of the human body are tough to reproduce. Mechanical limbs can be crafted at a Fueled Smithy.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>ArtificialLimbs</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedPros</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>AmbroisenLimbs</defName>
+		<label>Paresian Limbs</label>
+		<description>Incredible engineering and craftmanship utilized in tangent have allowed for elegant limbs that are on par with natural limbs. Quite time and resource expensive. Paresian limbs can be crafted at a Fueled Smithy.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>MechanicalLimbs</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedPros</tab>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

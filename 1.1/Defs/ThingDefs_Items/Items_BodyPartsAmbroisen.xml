@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <ThingDef Name="AmbroisenMed" ParentName="BodyPartBase" Abstract="True">
+      <tradeTags>
+         <li>Ambroisen</li>
+      </tradeTags>
+      <thingCategories>
+         <li>BodyPartsSimple</li>
+      </thingCategories>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/AmbroisenProsthesis</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+         <drawSize>0.80</drawSize>
+         <shaderType>CutoutComplex</shaderType>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>2</DeteriorationRate>
+         <WorkToMake>300000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <researchPrerequisite>AmbroisenLimbs</researchPrerequisite>
+         <recipeUsers>
+            <li>FueledSmithy</li>
+         </recipeUsers>
+      </recipeMaker>
+   </ThingDef>
+   
+
+   <!-- Added body parts -->
+
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedHand</defName>
+      <label>Paresian hand</label>
+      <description>A Paresian hand.</description>
+      <costList>
+         <Steel>70</Steel>
+		 <ComponentIndustrial>10</ComponentIndustrial>
+		 <Gold>2</Gold>
+		 <Silver>15</Silver>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedArm</defName>
+      <label>Paresian arm</label>
+      <description>A Paresian arm.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <ComponentIndustrial>15</ComponentIndustrial>
+		 <Gold>3</Gold>
+		 <Silver>20</Silver>
+      </costList>
+      <statBases>
+         <Mass>6</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedLeg</defName>
+      <label>Paresian leg</label>
+      <description>A Paresian leg.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <ComponentIndustrial>15</ComponentIndustrial>
+		 <Gold>3</Gold>
+		 <Silver>20</Silver>
+      </costList>
+      <statBases>
+         <Mass>8</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedFoot</defName>
+      <label>Paresian foot</label>
+      <description>A Paresian foot.</description>
+      <costList>
+         <Steel>70</Steel>
+		 <ComponentIndustrial>10</ComponentIndustrial>
+		 <Gold>2</Gold>
+		 <Silver>15</Silver>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedToe</defName>
+      <label>Paresian toe</label>
+      <description>A Paresian toe.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <ComponentIndustrial>5</ComponentIndustrial>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedFinger</defName>
+      <label>Paresian finger</label>
+      <description>A Paresian finger.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <ComponentIndustrial>5</ComponentIndustrial>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedNose</defName>
+      <label>Paresian nose</label>
+      <description>A Paresian nose.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedEye</defName>
+      <label>Paresian eye</label>
+      <description>A Paresian eye.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedEar</defName>
+      <label>Paresian ear</label>
+      <description>A Paresian ear.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>   
+   
+   </Defs>

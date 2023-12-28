@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <ThingDef Name="Basic" ParentName="BodyPartBase" Abstract="True">
+      <tradeTags>
+         <li>BasicProstheses</li>
+      </tradeTags>
+      <thingCategories>
+         <li>BodyPartsSimple</li>
+      </thingCategories>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+         <drawSize>0.80</drawSize>
+         <shaderType>CutoutComplex</shaderType>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>2</DeteriorationRate>
+         <WorkToMake>6000</WorkToMake>
+      </statBases>
+      <recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <researchPrerequisite>CrudeLimbs</researchPrerequisite>
+         <recipeUsers>
+            <li>CraftingSpot</li>
+         </recipeUsers>
+      </recipeMaker>
+   </ThingDef>
+   
+
+   <!-- Added body parts -->
+
+   <ThingDef ParentName="Basic">
+      <defName>IronArm</defName>
+      <label>iron arm</label>
+      <description>A highly ineffective replacement for a missing arm.</description>
+      <costList>
+         <Steel>50</Steel>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="Basic">
+      <defName>ProstheticHook</defName>
+      <label>prosthetic hook</label>
+      <description>A simple hook to replace a missing hand. Very limited functionality.</description>
+      <costList>
+         <Steel>25</Steel>
+      </costList>
+      <statBases>
+         <Mass>6</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="Basic">
+      <defName>WoodenFoot</defName>
+      <label>wooden foot</label>
+      <description>A crude replica of a human foot made out of wood. Uncomfortable and ineffective, but better than nothing.</description>
+      <costList>
+         <WoodLog>25</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="Basic">
+      <defName>WoodenToe</defName>
+      <label>wooden toe</label>
+      <description>Wooden replacement for a missing toe.</description>
+      <costList>
+         <WoodLog>5</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="Basic">
+      <defName>WoodenFinger</defName>
+      <label>wooden finger</label>
+      <description>Wooden replacement for a missing finger.</description>
+      <costList>
+         <WoodLog>5</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+    <ThingDef ParentName="Basic">
+      <defName>WoodenNose</defName>
+      <label>wooden nose</label>
+      <description>Wooden replacement for a missing nose.</description>
+      <costList>
+         <WoodLog>5</WoodLog>
+      </costList>
+      <statBases>
+         <Mass>0.1</Mass>
+      </statBases>
+   </ThingDef>
+
+    <ThingDef ParentName="Basic">
+      <defName>EyePatch</defName>
+      <label>eye patch</label>
+      <description>Piece of cloth to cover the hole where one's eye once was.</description>
+      <costList>
+         <Cloth>15</Cloth>
+      </costList>
+      <statBases>
+         <Mass>0.1</Mass>
+      </statBases>
+   </ThingDef>   
+   
+    <ThingDef ParentName="Basic">
+      <defName>EarPatch</defName>
+      <label>ear patch</label>
+      <description>Piece of cloth to cover the hole where one's ear once was.</description>
+      <costList>
+         <Cloth>15</Cloth>
+      </costList>
+      <statBases>
+         <Mass>0.1</Mass>
+      </statBases>
+   </ThingDef>   
+   
+   </Defs>
